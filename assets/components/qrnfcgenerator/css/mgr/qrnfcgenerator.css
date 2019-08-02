@@ -1,0 +1,44 @@
+.qrnfcgenerator-widget-visits table th .visits-date {
+    font-weight: normal;
+}
+
+.qrnfcgenerator-widget-visits .visits__change {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+}
+
+.qrnfcgenerator-widget-visits .visits__change::after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid black;
+    display: block;
+    position: absolute;
+    content: " ";
+    right: -20px;
+    top: 5px;
+}
+
+.qrnfcgenerator-widget-visits .visits__change--equal::after {
+    display: none;
+}
+
+.qrnfcgenerator-widget-visits .visits__change--increase {
+    color: #6CB24A;
+}
+
+.qrnfcgenerator-widget-visits .visits__change--increase::after {
+    border-bottom-color: #6CB24A;
+}
+
+.qrnfcgenerator-widget-visits .visits__change--decrease {
+    color: #CF1124;
+}
+
+.qrnfcgenerator-widget-visits .visits__change--decrease::after {
+    border-bottom: none;
+    border-top: 8px solid #CF1124;
+}

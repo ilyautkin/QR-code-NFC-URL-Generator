@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve_files' => true,
+  'resolve_php' => true,
+  'namespace' => 'qrnfcgenerator',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'bf19b0371be026ac60b99bff7978bedc',
+  'package' => 'modx',
+  'class' => 'modNamespace',
+  'signature' => '090b20df02498c9ee19e20af18c463d3',
+  'native_key' => 'qrnfcgenerator',
+  'object' => '{"name":"qrnfcgenerator","path":"{core_path}components\\/qrnfcgenerator\\/","assets_path":"{assets_path}components\\/qrnfcgenerator\\/"}',
+);

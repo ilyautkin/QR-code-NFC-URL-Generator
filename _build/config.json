@@ -1,0 +1,60 @@
+{
+  "name": "QRNFCGenerator",
+  "lowCaseName": "qrnfcgenerator",
+  "description": "",
+  "author": "Sterc",
+  "version": "1.0.0",
+  "package":{
+    "elements": {
+      "plugins": [{
+        "name": "QRNFCGenerator",
+        "description": "",
+        "file": "qrnfcgenerator.plugin.php",
+        "events": [
+          "OnLoadWebDocument",
+          "OnDocFormRender"
+        ]
+      }],
+      "snippets": [],
+      "chunks": [],
+      "templates": [],
+      "tvs": []
+    },
+    "systemSettings": [{
+      "key": "encryption.encrypt_key",
+      "type": "textfield",
+      "area": "encryption",
+      "value": "58f34a51233f50b2f5dfab5ec7153132"
+    },{
+      "key": "encryption.encrypt_iv",
+      "type": "textfield",
+      "area": "encryption",
+      "value": "f05cfd6e9a7188d6cf86ff80bee990d3"
+    },{
+      "key": "utm_campaign",
+      "type": "textfield",
+      "area": "qr_nfc",
+      "value": "website"
+    },{
+      "key": "user_name",
+      "type": "textfield",
+      "area": "general",
+      "value": ""
+    }, {
+      "key": "user_email",
+      "type": "textfield",
+      "area": "general",
+      "value": ""
+    }]
+  },
+  "database": {
+    "tables": ["QRNFCVisit"]
+  },
+  "build":{
+    "resolver": {
+      "after": [
+        "widget.resolver.php"
+      ]
+    }
+  }
+}

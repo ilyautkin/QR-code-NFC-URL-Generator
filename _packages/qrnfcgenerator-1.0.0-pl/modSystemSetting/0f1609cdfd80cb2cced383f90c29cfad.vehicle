@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'qrnfcgenerator',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '497d0767ea7a499ed424df918f0cc165',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0f1609cdfd80cb2cced383f90c29cfad',
+  'native_key' => 'qrnfcgenerator.encryption.encrypt_iv',
+  'object' => '{"key":"qrnfcgenerator.encryption.encrypt_iv","value":"f05cfd6e9a7188d6cf86ff80bee990d3","xtype":"textfield","namespace":"qrnfcgenerator","area":"encryption","editedon":null}',
+);
