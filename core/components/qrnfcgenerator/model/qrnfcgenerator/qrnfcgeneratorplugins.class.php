@@ -7,10 +7,7 @@ require_once __DIR__ . '/qrnfcgenerator.class.php';
  */
 class QRNFCGeneratorPlugins extends QRNFCGenerator
 {
-    /**
-     * @param array $properties
-     */
-    public function onDocFormRender(array $properties = [])
+    public function onDocFormRender()
     {
         $this->modx->regClientStartupHTMLBlock('<script type="text/javascript">
             Ext.onReady(function() {
@@ -23,7 +20,7 @@ class QRNFCGeneratorPlugins extends QRNFCGenerator
         $this->modx->regClientStartupScript($this->config['assets_url'] . 'js/mgr/qrnfcgenerator.js');
     }
 
-    public function onLoadWebDocument(array $properties = [])
+    public function onLoadWebDocument()
     {
         if (isset($_GET['qrnfc_res']) && !empty($_GET['qrnfc_res'])) {
             $resourceId = (int) $this->decrypt($_GET['qrnfc_res']);
@@ -37,10 +34,6 @@ class QRNFCGeneratorPlugins extends QRNFCGenerator
 
                 $visit->save();
             }
-
-            var_dump($this->decrypt($_GET['qrnfc_res']));
-            exit;
         }
-
     }
 }
