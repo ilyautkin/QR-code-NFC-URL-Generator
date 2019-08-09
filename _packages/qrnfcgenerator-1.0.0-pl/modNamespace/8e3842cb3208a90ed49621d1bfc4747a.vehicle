@@ -8,10 +8,10 @@
   'resolve' => NULL,
   'validate' => NULL,
   'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
-  'guid' => '9a9934d8abf1924dfc3955c30f2f5d61',
+  'guid' => '9ecf157b1444a1bad219d058b45c292b',
   'package' => 'modx',
   'class' => 'modNamespace',
-  'signature' => '2fa32f398812ef104bcfc3e11b01f59c',
+  'signature' => '8e3842cb3208a90ed49621d1bfc4747a',
   'native_key' => 'qrnfcgenerator',
   'object' => '{"name":"qrnfcgenerator","path":"{core_path}components\\/qrnfcgenerator\\/","assets_path":"{assets_path}components\\/qrnfcgenerator\\/"}',
 );

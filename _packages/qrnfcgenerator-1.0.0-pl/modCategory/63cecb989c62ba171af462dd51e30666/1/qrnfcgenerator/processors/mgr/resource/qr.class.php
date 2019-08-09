@@ -44,18 +44,18 @@ class QRNFCGeneratorQRGenerateProcessor extends modProcessor
             return $this->failure();
         }
 
-        
+
         $qrCode = $this->modx->qrnfcgenerator->generateQRCode($url);
 
 
         /* Download the QR code. */
         header('Content-Description: File Transfer');
         header('Content-Type: ' . $qrCode->getContentType());
-//        header('Content-Disposition: attachment; filename="' . $this->formatFilename($modResource) . '"');
-//        header('Expires: 0');
-//        header('Cache-Control: must-revalidate');
-//        header('Pragma: public');
-//        header('Content-Length: ' . filesize($qrCode->getSize()));
+        header('Content-Disposition: attachment; filename="' . $this->formatFilename($modResource) . '"');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($qrCode->getSize()));
 
         echo $qrCode->writeString();
         exit;

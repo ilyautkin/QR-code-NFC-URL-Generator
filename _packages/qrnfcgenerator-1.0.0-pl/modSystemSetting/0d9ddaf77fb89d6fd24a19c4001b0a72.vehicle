@@ -6,10 +6,10 @@
   'resolve' => NULL,
   'validate' => NULL,
   'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
-  'guid' => 'c9b4d96931db05ed73a102a141dba83c',
+  'guid' => '74f5ced08369c1ef1c254a4bade43260',
   'package' => 'modx',
   'class' => 'modSystemSetting',
-  'signature' => '2b62a7d78aa54d8265357e4ef922f895',
+  'signature' => '0d9ddaf77fb89d6fd24a19c4001b0a72',
   'native_key' => 'qrnfcgenerator.encryption.encrypt_iv',
   'object' => '{"key":"qrnfcgenerator.encryption.encrypt_iv","value":"f05cfd6e9a7188d6cf86ff80bee990d3","xtype":"textfield","namespace":"qrnfcgenerator","area":"encryption","editedon":null}',
 );
