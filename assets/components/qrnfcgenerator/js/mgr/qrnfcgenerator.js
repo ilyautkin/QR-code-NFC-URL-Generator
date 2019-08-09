@@ -26,15 +26,13 @@ MODx.window.NFCUrlCopyResponseWindow = function (config) {
         title         : _('qrnfcgenerator.window.nfc.title'),
         html          : '<p>' + _('qrnfcgenerator.window.nfc.copy_response.success') + '</p>',
         buttons       : [{
-            text: _('close'),
+            text: _('qrnfcgenerator.close'),
             handler: function () {
                 this.hide();
             },
             scope: this
         }],
 
-        saveBtnText   : 'qrnfcgenerator.import.window.btn_save',
-        cancelBtnText : 'qrnfcgenerator.import.window.btn_cancel',
         autoHeight    : true,
         keys: []
     });
@@ -58,14 +56,11 @@ Ext.onReady(function () {
             };
 
             var parameters = [];
-
             for (var key in config) {
                 if (config.hasOwnProperty(key)) {
                     parameters.push(key + '=' + encodeURIComponent(config[key]));
                 }
             }
-
-            // location.href = Newsletter.config.connector_url + '?action=' + this.exportListWindow.baseParams.action + '&download=1&HTTP_MODAUTH=' + MODx.siteId;
 
             window.open(location.origin + QRNFCGenerator.config.connector_url + '?' + parameters.join('&'),'_blank');
         }
@@ -102,7 +97,7 @@ Ext.onReady(function () {
                                 }],
                                 width: 500,
                                 buttons: [{
-                                    text: _('close'),
+                                    text: _('qrnfcgenerator.close'),
                                     handler: function () {
                                         QRNFCGenerator.window.copyUrlWindow.hide();
                                     }

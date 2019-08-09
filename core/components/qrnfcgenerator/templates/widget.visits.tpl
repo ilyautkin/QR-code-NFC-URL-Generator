@@ -1,5 +1,5 @@
 <div class="qrnfcgenerator-widget-visits">
-    <p>{$description}</p>
+    <p>{$_lang['qrnfcgenerator.widget.visits.description']}</p>
     <br/>
 
     <div class="table-wrapper">
@@ -8,14 +8,14 @@
                 <tr>
                     <th>{$_lang['id']}</th>
                     <th>{$_lang['pagetitle']}</th>
-                    <th>{$_lang['visits']}<span class="visits-date">({$dates.cur_week.start} - {$dates.cur_week.end})</span></th>
-                    <th>Visits <span class="visits-date">({$dates.past_week.start} - {$dates.past_week.end})</span></th>
+                    <th>{$_lang['qrnfcgenerator.widget_visits.visits']} <span class="visits-date">({$dates.cur_week.start} - {$dates.cur_week.end})</span></th>
+                    <th>{$_lang['qrnfcgenerator.widget_visits.visits']} <span class="visits-date">({$dates.past_week.start} - {$dates.past_week.end})</span></th>
                 </tr>
             </thead>
             <tbody>
                 {if count($data.records) === 0}
                     <td colspan="4">
-                        <p>There is no data available yet.</p>
+                        <p>{$_lang['qrnfcgenerator.widget_visits.no_data']}</p>
                     </td>
                 {else}
                     {foreach $data.records as $record}

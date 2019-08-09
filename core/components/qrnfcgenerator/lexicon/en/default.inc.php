@@ -9,6 +9,7 @@ $_lang['qrnfcgenerator.window.nfc.copy_response.success'] = 'The NFC URL was suc
 $_lang['qrnfcgenerator.window.nfc.copy_response.error']   = 'The NFC URL could not be copied to your clipboard, please select and copy the URL manually.';
 $_lang['qrnfcgenerator.window.error_unknown']             = 'An unknown error occurred. Please try again.';
 
+$_lang['qrnfcgenerator.close']      = 'Close';
 $_lang['qrnfcgenerator.copy_close'] = 'Copy and close';
 
 /* Area's */
@@ -25,8 +26,10 @@ $_lang['setting_qrnfcgenerator.encryption.encrypt_key'] = 'Encryption Key';
 $_lang['setting_qrnfcgenerator.encryption.encrypt_iv']  = 'Encryption IV';
 
 /* Widget. */
-$_lang['qrnfcgenerator.widget_visits']      = 'QR NFC Visits';
-$_lang['qrnfcgenerator.widget_visits_desc'] = 'Displays visit statistics for QR/NFC campaigns.';
+$_lang['qrnfcgenerator.widget_visits']         = 'QR NFC';
+$_lang['qrnfcgenerator.widget_visits_desc']    = 'Displays visit statistics for QR/NFC campaigns.';
+$_lang['qrnfcgenerator.widget_visits.no_data'] = 'There is no data available yet.';
+$_lang['qrnfcgenerator.widget_visits.visits']  = 'Visits';
 
 /* Widget template lexicons. */
 $_lang['qrnfcgenerator.widget.visits.description'] = 'Below the results of your QR/NFC campaigns are shown. Past 7 days versus 7 days before.';

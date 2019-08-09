@@ -22,14 +22,16 @@ class modDashboardWidgetQRNFCGeneratorVisits extends modDashboardFileWidget
 
         $this->modx->regClientCSS($this->qrnfcgenerator->config['css_url'] . 'mgr/qrnfcgenerator.css');
 
+        $this->modx->controller->addLexiconTopic('qrnfcgenerator:default');
+        $this->modx->controller->prepareLanguage();
+
         return $this->modx->smarty->fetch(
             $this->qrnfcgenerator->config['templates_path'] . 'widget.visits.tpl',
             [
-                'description' => $this->modx->lexicon('qrnfcgenerator.widget.visits.description'),
                 'dates'       => [
                     'cur_week'  => [
-                        'start' => date('d/m'),
-                        'end'   => date('d/m', strtotime('-1 week'))
+                        'start' => date('d/m', strtotime('-1 week')),
+                        'end'   => date('d/m')
                     ],
                     'past_week' => [
                         'start' => date('d/m', strtotime('-2 weeks')),

@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'qrnfcgenerator',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'be97bcc8dbbd8cf97e746a53e7083afc',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '15973f31cbe1b366603e9f983cca9e38',
+  'native_key' => 'qrnfcgenerator.user_email',
+  'object' => '{"key":"qrnfcgenerator.user_email","value":"","xtype":"textfield","namespace":"qrnfcgenerator","area":"general","editedon":null}',
+);

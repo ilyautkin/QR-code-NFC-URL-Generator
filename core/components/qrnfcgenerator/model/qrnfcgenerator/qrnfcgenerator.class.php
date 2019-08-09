@@ -115,7 +115,11 @@ class QRNFCGenerator
             'utm_medium'   => $source,
             'utm_campaign' => $this->modx->getOption('qrnfcgenerator.utm_campaign', null, 'website'),
             'qrnfc_res'    => $this->encrypt($resourceId)
-        ], 'full');
+        ],
+        'full',
+        [
+            'xhtml_urls' => false
+        ]);
     }
 
     /**
@@ -126,7 +130,6 @@ class QRNFCGenerator
      */
     public function generateQRCode($url)
     {
-        /* Create a basic QR code. */
         $qrCode = new QrCode($url);
         $qrCode->setSize(300);
 
