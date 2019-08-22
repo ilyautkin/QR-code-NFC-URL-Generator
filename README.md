@@ -1,5 +1,5 @@
 # QRNFCGenerator - Generate QR Codes/NFC campaign URL's for your resources #
-![QRNFCGenerator](https://img.shields.io/badge/version-1.0.0-brightgreen.svg) ![MODX Extra by Sterc](https://img.shields.io/badge/extra%20by-sterc-ff69b4.svg)  
+![QRNFCGenerator](https://img.shields.io/badge/version-1.0.1-brightgreen.svg) ![MODX Extra by Sterc](https://img.shields.io/badge/extra%20by-sterc-ff69b4.svg)  
 
 QRNFCGenerator is an extra which allows you to generate QR codes and NFC URL's for a specific resource from the edit resource manager page and also supports Google Campaign Tracking.
 
