@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="qrnfcgenerator" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="qrnfcgenerator">
+    <object class="QRNFCVisit" table="qrnfc_visit" extends="xPDOSimpleObject">
+        <field key="resource" dbtype="integer" precision="10" phptype="int" null="false" default="" />
+        <field key="type" dbtype="text" precision="100" phptype="string" null="false" default="" />
+        <field key="createdon" dbtype="timestamp" phptype="timestamp" null="false" default="CURRENT_TIMESTAMP"/>
+    </object>
+</model>

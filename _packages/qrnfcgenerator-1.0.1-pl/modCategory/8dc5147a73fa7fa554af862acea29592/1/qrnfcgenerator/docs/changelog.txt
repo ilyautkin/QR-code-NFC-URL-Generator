@@ -1,0 +1,9 @@
+Changelog for QRNFCGenerator.
+
+QRNFCGenerator 1.0.1
+==============
+- Fixed bug where lexicons of other extra's could not be loaded properly.
+
+QRNFCGenerator 1.0.0
+==============
+- Initial release.
