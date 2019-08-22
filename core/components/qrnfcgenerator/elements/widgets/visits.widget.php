@@ -22,8 +22,8 @@ class modDashboardWidgetQRNFCGeneratorVisits extends modDashboardFileWidget
 
         $this->modx->regClientCSS($this->qrnfcgenerator->config['css_url'] . 'mgr/qrnfcgenerator.css');
 
-        $this->modx->controller->addLexiconTopic('qrnfcgenerator:default');
-        $this->modx->controller->prepareLanguage();
+        $this->modx->lexicon->load('qrnfcgenerator:default');
+        $this->modx->controller->setPlaceholder('_lang', $this->modx->lexicon->fetch());
 
         return $this->modx->smarty->fetch(
             $this->qrnfcgenerator->config['templates_path'] . 'widget.visits.tpl',
