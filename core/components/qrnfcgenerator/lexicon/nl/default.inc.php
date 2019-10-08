@@ -32,4 +32,4 @@ $_lang['qrnfcgenerator.widget_visits.no_data'] = 'Er is nog geen data beschikbaa
 $_lang['qrnfcgenerator.widget_visits.visits']  = 'Bezoeken';
 
 /* Widget template lexicons. */
-$_lang['qrnfcgenerator.widget.visits.description'] = 'Hieronder worden de resultaten van de QR / NFC campagnes getoond. Afgelopen 7 dagen versus 7 days daarvoor.';
+$_lang['qrnfcgenerator.widget.visits.description'] = 'Hieronder worden de resultaten van de QR / NFC campagnes getoond. Afgelopen 7 dagen versus 7 dagen daarvoor.';
