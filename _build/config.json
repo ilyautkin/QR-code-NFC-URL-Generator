@@ -3,7 +3,7 @@
   "lowCaseName": "qrnfcgenerator",
   "description": "",
   "author": "Sterc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "package":{
     "elements": {
       "plugins": [{
@@ -12,7 +12,8 @@
         "file": "qrnfcgenerator.plugin.php",
         "events": [
           "OnLoadWebDocument",
-          "OnDocFormRender"
+          "OnDocFormRender",
+          "OnPageNotFound"
         ]
       }],
       "snippets": [],
@@ -45,10 +46,20 @@
       "type": "textfield",
       "area": "general",
       "value": ""
+    }, {
+      "key": "use_utm",
+      "type": "combo-boolean",
+      "area": "general",
+      "value": "1"
+    }, {
+      "key": "use_shorter",
+      "type": "combo-boolean",
+      "area": "general",
+      "value": "1"
     }]
   },
   "database": {
-    "tables": ["QRNFCVisit"]
+    "tables": ["QRNFCVisit","QRNFCLink"]
   },
   "build":{
     "readme": "docs/readme.txt",

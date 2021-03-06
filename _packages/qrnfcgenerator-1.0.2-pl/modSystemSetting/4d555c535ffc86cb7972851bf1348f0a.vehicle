@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'qrnfcgenerator',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3ddbaee3248db7b76910014b424f333f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4d555c535ffc86cb7972851bf1348f0a',
+  'native_key' => 'qrnfcgenerator.encryption.encrypt_key',
+  'object' => '{"key":"qrnfcgenerator.encryption.encrypt_key","value":"58f34a51233f50b2f5dfab5ec7153132","xtype":"textfield","namespace":"qrnfcgenerator","area":"encryption","editedon":null}',
+);

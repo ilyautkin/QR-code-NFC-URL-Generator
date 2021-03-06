@@ -1,0 +1,198 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'f99a798db099188bfc68f0a53bfc221d' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '7573421a7f7e5d5ff43cf3238877d14c' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+              'guid' => '65dde99a0e41d3673bd5992053bcffd4',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnLoadWebDocument',
+              ),
+              'signature' => '1aee1ec95e52fc109b555fe9baa85b9a',
+            ),
+            '8ea021a1b6aaeed143b35fe98fe11dea' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormRender","priority":0,"propertyset":0}',
+              'guid' => '9dde3a8eeeddbef63feb2e25c22549d8',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormRender',
+              ),
+              'signature' => 'e5ad68e3fa9273292f8ab8148b22fb01',
+            ),
+            '793aa0542d62d20900941dbfd6d4ee80' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnPageNotFound","priority":0,"propertyset":0}',
+              'guid' => '70659874b413d7f25cc9292e37bb02e9',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnPageNotFound',
+              ),
+              'signature' => '5ed4d357d8a302200ba72bd247dace9c',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"QRNFCGenerator","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"$generator = $modx->getService(\\n    \'qrnfcgeneratorplugins\',\\n    \'QRNFCGeneratorPlugins\',\\n    $modx->getOption(\\n        \'qrnfcgenerator.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/qrnfcgenerator\\/\'\\n    ) . \'model\\/qrnfcgenerator\\/\',\\n    []\\n);\\n\\nif (!($generator instanceof QRNFCGenerator)) {\\n    $modx->log(xPDO::LOG_LEVEL_ERROR, \'[plugin.QRNFCGenerator] getService failed for class QRNFCGeneratorPlugins.\');\\n\\n    return \'\';\\n}\\n\\n$method = lcfirst($modx->event->name);\\nif (method_exists($generator, $method)) {\\n    $generator->$method($scriptProperties);\\n}","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"$generator = $modx->getService(\\n    \'qrnfcgeneratorplugins\',\\n    \'QRNFCGeneratorPlugins\',\\n    $modx->getOption(\\n        \'qrnfcgenerator.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/qrnfcgenerator\\/\'\\n    ) . \'model\\/qrnfcgenerator\\/\',\\n    []\\n);\\n\\nif (!($generator instanceof QRNFCGenerator)) {\\n    $modx->log(xPDO::LOG_LEVEL_ERROR, \'[plugin.QRNFCGenerator] getService failed for class QRNFCGeneratorPlugins.\');\\n\\n    return \'\';\\n}\\n\\n$method = lcfirst($modx->event->name);\\nif (method_exists($generator, $method)) {\\n    $generator->$method($scriptProperties);\\n}"}',
+        'guid' => 'e7d2bd8c54b7f0c13b702274629fb5dc',
+        'native_key' => NULL,
+        'signature' => 'dfd7aa497573466aecff140135e35226',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'qrnfcgenerator',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"qrnfcgenerator-1.0.2-pl\\/modCategory\\/5386dc5f11236ed08458a7ceab3e790b\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"qrnfcgenerator"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"qrnfcgenerator-1.0.2-pl\\/modCategory\\/5386dc5f11236ed08458a7ceab3e790b\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"qrnfcgenerator"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"qrnfcgenerator-1.0.2-pl\\/modCategory\\/5386dc5f11236ed08458a7ceab3e790b.gpm.resolve.tables.resolver","type":"php","name":"gpm.resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"qrnfcgenerator-1.0.2-pl\\/modCategory\\/5386dc5f11236ed08458a7ceab3e790b.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"qrnfcgenerator-1.0.2-pl\\/modCategory\\/5386dc5f11236ed08458a7ceab3e790b.stercextra.resolver.resolver","type":"php","name":"stercextra.resolver"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"qrnfcgenerator-1.0.2-pl\\/modCategory\\/5386dc5f11236ed08458a7ceab3e790b.widget.resolver.resolver","type":"php","name":"widget.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b7c7e37f7705cd34b94b5e5d91a931ff',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '5386dc5f11236ed08458a7ceab3e790b',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"QRNFCGenerator","rank":0}',
+);

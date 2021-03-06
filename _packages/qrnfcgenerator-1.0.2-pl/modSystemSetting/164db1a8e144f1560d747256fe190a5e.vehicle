@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'qrnfcgenerator',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '22e64b3d898a40ac1f5c5c279bf9b402',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '164db1a8e144f1560d747256fe190a5e',
+  'native_key' => 'qrnfcgenerator.utm_campaign',
+  'object' => '{"key":"qrnfcgenerator.utm_campaign","value":"website","xtype":"textfield","namespace":"qrnfcgenerator","area":"qr_nfc","editedon":null}',
+);
